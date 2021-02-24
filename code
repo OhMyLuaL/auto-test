@@ -1,0 +1,7 @@
+let b = document.getElementsByTagName("label")
+for(let i = 0; i < b.length; ++i) {
+let c = document.getElementsByName(b[i].id.substring(1));
+let j = Math.floor(Math.random() * c.length - 0.1);
+if(j < 0 || j > c.length) j = 0;
+if(c[j] != undefined) c[j].checked = true;
+}
